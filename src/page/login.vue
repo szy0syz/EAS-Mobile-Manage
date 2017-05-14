@@ -47,7 +47,7 @@
       submitForm (formName) {
         this.$refs[formName].validate((valid) => {
           if (valid) {
-            this.$router.push('manage')
+            this.$router.push('home')
           } else {
             this.$notify.error({
               title: '错误',
