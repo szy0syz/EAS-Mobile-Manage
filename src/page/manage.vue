@@ -6,7 +6,7 @@
           <el-menu-item index="manage"><i class="el-icon-menu"></i>首页</el-menu-item>
           <el-submenu index="2">
             <template slot="title"><i class="el-icon-document"></i>基础资料管理</template>
-            <el-menu-item index="custome">客户管理</el-menu-item>
+            <el-menu-item index="customer">客户管理</el-menu-item>
             <el-menu-item index="supplier">供应商管理</el-menu-item>
           </el-submenu>
           <el-submenu index="3">
@@ -38,7 +38,7 @@
           </el-submenu>
           <el-submenu index="8">
             <template slot="title"><i class="el-icon-setting"></i>系统设置</template>
-            <el-menu-item index="users">用户管理</el-menu-item>
+            <el-menu-item index="userList">用户管理</el-menu-item>
             <el-menu-item index="permission">权限管理</el-menu-item>
           </el-submenu>
           <el-submenu index="9">
