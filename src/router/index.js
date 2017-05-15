@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Login from '@/page/login'
 import Home from '@/page/home'
+import Manage from '@/page/manage'
 
 Vue.use(Router)
 
@@ -13,9 +14,15 @@ export default new Router({
       component: Login
     },
     {
-      path: '/home',
-      name: 'Home',
-      component: Home
+      path: '/manage',
+      name: 'Manage',
+      component: Manage,
+      children: [{
+        path: '',
+        component: Home, // 后台首页单独放home里
+        meta: []
+        // meta: [{'name': 'szy'}]
+      }]
     }
   ]
 })
